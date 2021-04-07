@@ -136,9 +136,6 @@ nav{
 
 
 /*車款介紹*/
-#car{
-	margin-top: 370px;
-}
 #car_type{
 	position: relative;
 	z-index: 0;
@@ -151,18 +148,18 @@ div{
 }
 .main_title{
 	position: relative;
-	top: 500px;
+	margin-top: 40%;
 	text-align: center;
 }
 .second_1{
 	display: flex;
 	justify-content: space-around;
-	margin-top: 565px
+	margin-top: 5%;
 }
 .second_2{
 	display: flex;
 	justify-content: space-around;
-	margin-top: 70px
+	margin-top: 5%;
 }
 .car-info{
 	position: relative;
@@ -208,51 +205,45 @@ div{
 
 
 /*會員註冊*/
-#member{
-	margin-bottom: 40px
-}
 .member_title{
 	position: relative;
-	top: 50px;
+	margin-top: 6%;
 	text-align: center;
 }
 .member_register_space{
 	position: relative;
 	z-index: 0;
-	top: 80px;
+	margin-top: 3%;
 	width: 100%;
 	height: 700px;
 	background: gray;
 	box-sizing: border-box;
-}
-#account{
-	float: left;
-	margin-left: 10%;
-	margin-top: 5%;
 }
 .member_register_text{
 	font-size: 28px;
 	color: white;
 }
 .member_register_input{
-	width: 1000px;
+	width: 90%;
 	height: 40px;
 	font-size: 18px;
 }
+#account{
+	margin-left: 4%;
+	padding-top: 2.5%;
+}
 #password{
-	float: left;
-	margin-left: 10%;
+	margin-left: 4%;
 	margin-top: 3%;
 }
 #phone{
-	float: left;
-	margin-left: 10%;
+	margin-left: 4%;
 	margin-top: 3%;
 }
 #submit-member-file{
 	float: left;
 	margin-left: 45%;
-	margin-top: 3%;
+	margin-top: 5%;
 }
 #submit-member-file-input{
 	width: 100px;
@@ -270,18 +261,19 @@ div{
 .about-us-block{
 	width: 16.67%;
 	height: 350px;
-	margin-top: 80px;
+	margin-top: 2%;
 }
 .about-us-title{
-	text-align: center;
+	text-align: left;
+	margin-left: 35%;
 	font-size: 16px;
 	color: #BA2235;
 }
 .about-us-text{
 	list-style-type: none;
 	text-align: left;
-	margin-left: 73px;
-	margin-top: 25px;
+	margin-left: 35%;
+	margin-top: 10%;
 }
 .about-us-text-container{
 	margin-bottom: 7px;
