@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="全新TOYOTA官網，給您全新的賞車體驗與更優質貼心的e化服務，引領快速啟動、體驗未來生活！" />
+	<meta name="author" content="黃凱立 Kenny Huang" />
+	<title>TOYOTA FAKE 會員註冊</title>
+	<link rel=stylesheet type="text/css" href="css/style.css">
+    <link rel=stylesheet type="text/css" href="css/register.css">
+	<script type="text/javascript" async src="js/member.js"></script>
+    <script src="https://kit.fontawesome.com/2e20183103.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header id="home">
+		<nav class="top">
+			<div class="title">
+				<a href="web.html">
+					<img src="img/logo-toyota.png" width="150px"/>
+				</a>
+			</div>
+			<div id="top-buttons-container">
+				<ul>
+					<li class="top-button"><a class="top-button-type" href="web.html#home" role="button" style="text-decoration:none;">回到首頁</a></li>
+					<li class="top-button"><a class="top-button-type" href="web.html#car" role="button" style="text-decoration:none;">車款介紹</a></li>
+					<li class="top-button"><a class="top-button-type" href="web.html#member" role="button" style="text-decoration:none;">會員註冊</a></li>
+					<li class="top-button"><a class="top-button-type" href="web.html#about" role="button" style="text-decoration:none;">關於我們</a></li>
+				</ul>
+			</div>
+		</nav>
+        <<nav></nav>
+    </header>
+    <main id="register">
+        <div id="register-space">
+            <form action="#" method="post" >
+                <h1 id="register-account-title">請填寫註冊資料</h1>
+                <div class="register-account">
+                    <i class="fas fa-user-alt"></i>
+                    <input class="register-input" type="account" name="account" placeholder="帳號" pattern="[a-zA-Z0-9]{8,12}" 
+                    onchange="this.setCustomValidity(this.validity.patternMismatch ? '請輸入8-12個字、由英文或數字組成的帳號' : '');" required />
+                </div>
+                <div class="register-account">
+                    <i class="fas fa-key"></i>
+                    <input class="register-input" type="password" name="password" placeholder="密碼" pattern="^([a-zA-Z]+\d+|\d+[a-zA-Z]+)[a-zA-Z0-9]*$" minlength="8" maxlength="12"
+                    onchange="this.setCustomValidity(this.validity.patternMismatch ? '請輸入8-12個字、英數字混和的密碼' : ''); if(this.checkValidity()) form.password_two.pattern = this.value" required />
+                </div>
+                <div class="register-account">
+                    <i class="fas fa-key"></i>
+                    <input class="register-input" type="password" name="password_two" placeholder="確認密碼" pattern="^([a-zA-Z]+\d+|\d+[a-zA-Z]+)[a-zA-Z0-9]*$" 
+                    onchange="this.setCustomValidity(this.validity.patternMismatch ? '請重新輸入正確的密碼' : '');" required />
+                </div>
+                <div class="register-account">
+                    <i class="fas fa-file-signature"></i>
+                    <input class="register-input" type="text" name="name" placeholder="真實姓名" required />
+                </div>
+                <div class="register-account">
+                    <i class="far fa-calendar-alt"></i>
+                    <input class="register-input" type="text" name="birth" placeholder="出生日期" onfocus="(this.type='date')" min="1921-04-10" max="2021-04-10" required />
+                </div>
+                <div class="register-account">
+                    <i class="fas fa-fingerprint"></i>
+                    <input class="register-input" type="text" name="id" placeholder="身分證字號" pattern="^[A-Z]{1}[1-2]{1}[0-9]{8}$"
+                    onchange="this.setCustomValidity(this.validity.patternMismatch ? '請輸入正確的身分證字號' : '');" required />
+                </div>
+                <div class="register-account">
+                    <i class="fas fa-mobile-alt"></i>
+                    <input class="register-input" type="tel" name="phone" placeholder="手機號碼" pattern="^09[0-9]{8}$" 
+                    onchange="this.setCustomValidity(this.validity.patternMismatch ? '請輸入正確的手機號碼' : '');" required />
+                </div>
+                <div id="member-register-text-space">
+                    <input type="checkbox" required/>
+					<p class="member-register-text">您同意遵守</p>
+					<a class="member-register-hyperlink" href="https://www.toyota.com.tw/rights.aspx" role="button" style="text-decoration:none;">法律保護條款</a>
+					<p class="member-register-text">及</p>
+					<a class="member-register-hyperlink" href="https://www.toyota.com.tw/privacy.aspx" role="button" style="text-decoration:none;">隱私權政策</a>
+					<p class="member-register-text">。</p>
+				</div>
+                <div id="register-submit">
+                    <input id="register-submit-input" type="submit" value="資料填寫完畢，確認送出" />
+                </div>
+            </form>
+        </div> 
+    </main>
+    <footer>
+        <div id="bottom">
+			<div id="copyright-container">
+				<div id="copyright-text">
+					<p>© HOTAI MOTOR CO., LTD. 和泰汽車股份有限公司</p>
+				</div>
+				<div id="copyright-img">
+					<img src="img/toyota-white@2x.png" width="100px" />
+				</div>
+			</div>
+			<div id="reminder-text">
+				<p>建議使用edge，或chrome瀏覽器，以達最佳瀏覽效果。</p>
+			</div>
+			<div id="help">
+				<div id="help-buttons-container">
+					<ul>
+						<li class="help-button"><a class="help-button-type" href="https://www.toyota.com.tw/TFAQ/" role="button" style="text-decoration:none;">常見問題</a></li>
+						<li class="help-button"><span class="help-button-type">|</span></li>
+						<li class="help-button"><a class="help-button-type" href="https://www.toyota.com.tw/contact.aspx" role="button" style="text-decoration:none;">聯絡我們</a></li>
+						<li class="help-button"><span class="help-button-type">|</span></li>
+						<li class="help-button"><a class="help-button-type" href="https://www.toyota.com.tw/privacy.aspx" role="button" style="text-decoration:none;">隱私權說明</a></li>
+						<li class="help-button"><span class="help-button-type">|</span></li>
+						<li class="help-button"><a class="help-button-type" href="https://www.toyota.com.tw/rights.aspx" role="button" style="text-decoration:none;">法律保護條款</a></li>
+					</ul>
+				</div>
+				<div id="help-numbers-container">
+					<ul>
+						<li class="help-number"><a class="help-number-type" href="tel:0800221345" role="button" style="text-decoration:none;">客服專線 0800-221-345</a></li>
+						<li class="help-number"><span class="help-number-type">|</span></li>
+						<li class="help-number"><a class="help-number-type" href="tel:0255997299" role="button" style="text-decoration:none;">02-5599-7299</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/*會員註冊選單*/
+#register-space{
+    position: relative;
+    z-index: 0;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    width: 40%;
+    height: 1000px;
+    background-color: #EEEEEE;
+    box-sizing: border-box;
+}
+#register-account-title{
+    text-align: center;
+    padding-top: 10%;
+}
+.register-account{
+    position: relative;
+    left: 9%;
+    margin-top: 5%;
+}
+.register-input{
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    height: 50px;
+    border: 2px solid #BCA7A7;
+    border-radius: 3px;
+    color: black;
+    outline: none;
+    font-size: 18px;
+    text-indent: 10%;
+}
+#register-submit{
+    position: relative;
+    left: 9%;
+    margin-top: 5%;
+}
+#register-submit-input{
+    width: 81%;
+    height: 40px;
+	font-size: 18px;
+	color: black;
+	font-weight: bolder;
+	border: 2px solid #BCA7A7;
+    border-radius: 3px;
+}
+#register-submit-input:hover{
+	box-shadow: 0px 0px 5px 0px #AAAAAA;
+	-webkit-box-shadow: 0px 0px 5px 0px #AAAAAA;
+    -moz-box-shadow: 0px 0px 5px 0px #AAAAAA;
+    border: 1px solid #000000;
+}

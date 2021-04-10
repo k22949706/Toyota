@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,6 +8,8 @@
 	<title>TOYOTA FAKE</title>
 	<link rel=stylesheet type="text/css" href="css/style.css">
 	<script type="text/javascript" async src="js/member.js"></script>
+	<script src="https://kit.fontawesome.com/2e20183103.js" crossorigin="anonymous"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<header id="home">
@@ -52,8 +54,8 @@
 			</div>
 		</nav>
 	</header>
+	<div id="car"></div>
 	<main id="car_type">
-		<div id="car"></div>
 		<h1 class="main_title">車款介紹</h1>
 		<div class="second_1">
 			<article>
@@ -169,25 +171,40 @@
 				</a>
 			</article>
 		</div>
+		<div id="member"></div>
 	</main>
-	<div id="member">
-		<h1 class="member_title">會員註冊</h1>
-		<div class="member_register_space">
-			<form action="#" method="post">
-				<div id="account">
+	<div>
+		<h1 class="member-title">會員註冊</h1>
+		<div class="member-register-space">
+			<form action="register.html" method="post">
+				<!--<div id="account">
 					<b><p class="member_register_text">帳號 :</p></b>
-					<input class="member_register_input" type="email" name="account" placeholder="請輸入您的電子郵件" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+					<input class="member_register_input" type="email" name="account" placeholder="請輸入您的電子郵件" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 				</div>
 				<div id="password">
 					<b><p class="member_register_text">密碼 :</p></b>
-					<input class="member_register_input" type="password" name="password" placeholder="請輸入您的密碼" pattern="[a-zA-Z0-9]{8,}">
+					<input class="member_register_input" type="password" name="password" placeholder="請輸入您的密碼" pattern="[a-zA-Z0-9]{8,}" required>
 				</div>
 				<div id="phone">
 					<b><p class="member_register_text">手機號碼 :</p></b>
-					<input class="member_register_input" type="phone" name="phone" placeholder="請輸入您的手機號碼" pattern="^09[0-9]{8}$">
+					<input class="member_register_input" type="phone" name="phone" placeholder="請輸入您的手機號碼" pattern="^09[0-9]{8}$" required>
+				</div>-->
+				<h1 id="member-register-title">快速註冊</h1>
+				<div id="mail">
+                    <i class="fas fa-envelope"></i>
+                    <input class="member-register-input" type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+					onchange="this.setCustomValidity(this.validity.patternMismatch ? '請輸入正確的信箱' : '');" required />
+                </div>
+				<div id="member-register-text-space">
+					<p class="member-register-text">註冊表示您同意</p>
+					<a class="member-register-hyperlink" href="https://www.toyota.com.tw/rights.aspx" role="button" style="text-decoration:none;">法律保護條款</a>
+					<p class="member-register-text">及</p>
+					<a class="member-register-hyperlink" href="https://www.toyota.com.tw/privacy.aspx" role="button" style="text-decoration:none;">隱私權政策</a>
+					<p class="member-register-text">。</p>
 				</div>
+				<div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
 				<div id="submit-member-file">
-					<input id="submit-member-file-input" type="submit" value="送出資料"></input>
+					<input id="submit-member-file-input" type="submit" value="註冊"></input>
 				</div>
 			</form>
 		</div>
