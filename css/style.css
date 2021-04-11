@@ -545,7 +545,7 @@ i{
 	}
 	#copyright-img{
 		position: relative;
-		left: -35%;
+		left: -37%;
 		margin-top: -1%;
 	}
 	#reminder-text{
@@ -554,14 +554,16 @@ i{
 		left: -6.5%;
 	}
 	#help{
+		position: relative;
 		text-align: center;
 		margin-top: -2%;
+		left: -2%;
 	}
 }
 
 
 
-@media screen and (max-width: 414px){
+@media screen and (min-width: 376px) and (max-width: 414px){
 	/*最上方選單*/
 	.title{
 		position: relative;

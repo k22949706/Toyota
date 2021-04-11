@@ -453,7 +453,7 @@ i{
 
 
 /*RWD設定*/
-@media screen and (max-width: 450px){
+@media screen and (max-width: 375px){
 	/*最上方選單*/
 	.title{
 		position: relative;
@@ -474,70 +474,11 @@ i{
 	nav{
 		padding-top: 21%;
 	}
-
-
-	/*車款介紹*/
-	.main_title{
-		transform: scale(0.6);
-	}
-	.car-name{
-		transform: scale(0.55);
-	}
-	.car-price{
-		font-size: 12px;
-	}
-	.car-type-long{
-		width: 120%;
-		height: 20px;
-		transform: scale(0.6);
-	}
-	.car-type-short{
-		width: 50%;
-		height: 20px;
-		transform: scale(0.6);
-	}
-	.type-text{
-		font-size: 12px;
-	}
-
-
 	/*會員註冊*/
-	.member-title{
-		transform: scale(0.6);
-	}
-	.member-register-space{
-		position: relative;
-		width: 80%;
-		height: 350px;
-		left: 10%;
-		margin-bottom: 10%;
-	}
-	#member-register-title{
-		transform: scale(0.6);
-	}
-	.member-register-input{
-		text-indent: 15%;
-	}
 	#member-register-text-space{
 		font-size: smaller;
 		transform: scale(0.8);
 	}
-	.g-recaptcha {
-		position: relative;
-		left: 10%;
-        transform: scale(0.8);
-        -webkit-transform: scale(0.8);
-        transform-origin: 0 0;
-        -webkit-transform-origin: 0 0;
-    }
-
-
-	/*關於我們*/
-	.about-us-block{
-		display: none;
-	}
-
-
 	/*底部*/
 	#bottom{
 		height: 170px;
@@ -549,7 +490,7 @@ i{
 	}
 	#copyright-img{
 		position: relative;
-		left: -35%;
+		left: -37%;
 		margin-top: -1%;
 	}
 	#reminder-text{
@@ -558,6 +499,61 @@ i{
 		left: -6.5%;
 	}
 	#help{
+		position: relative;
+		text-align: center;
+		margin-top: -2%;
+		left: -2%;
+	}
+}
+
+@media screen and (min-width: 376px) and (max-width: 414px){
+	/*最上方選單*/
+	.title{
+		position: relative;
+		left: 28%;
+		margin-top: -18%;
+		color: white;
+		z-index: 2;
+		position: fixed;
+	}
+	#top-buttons-container{
+		margin-top: -13%;
+		margin-left: 3%;
+	}
+	.top-button{
+		display: inline;
+		margin-right: 3%;
+	}
+	nav{
+		padding-top: 21%;
+	}
+	/*會員註冊*/
+	#member-register-text-space{
+		font-size: smaller;
+		transform: scale(0.8);
+	}
+	/*底部*/
+	#bottom{
+		height: 170px;
+	}
+	#copyright-text{
+		position: relative;
+		left: -7%;
+		margin-top: 0.35%;
+	}
+	#copyright-img{
+		position: relative;
+		left: -37%;
+		margin-top: 0%;
+	}
+	#reminder-text{
+		position: relative;
+		margin-top: 5%;
+		left: -12.5%;
+	}
+	#help{
+		position: relative;
+		left: 2.5%;
 		text-align: center;
 		margin-top: -2%;
 	}
