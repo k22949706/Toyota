@@ -453,7 +453,7 @@ i{
 
 
 /*RWD設定*/
-@media screen and (max-width: 375px){
+@media screen and (max-width: 450px){
 	/*最上方選單*/
 	.title{
 		position: relative;
