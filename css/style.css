@@ -559,6 +559,9 @@ i{
 		margin-top: -2%;
 		left: -2%;
 	}
+	.help-button{
+		margin-right: 0.0001%;
+	}
 }
 
 
@@ -668,6 +671,9 @@ i{
 		left: 2.5%;
 		text-align: center;
 		margin-top: -2%;
+	}
+	.help-button{
+		margin-right: 0.0001%;
 	}
 }
 
