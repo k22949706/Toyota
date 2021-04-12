@@ -453,7 +453,7 @@ i{
 
 
 /*RWD設定*/
-@media screen and (max-width: 375px){
+@media screen and (max-width: 400px){
 	/*最上方選單*/
 	.title{
 		position: relative;
@@ -563,7 +563,7 @@ i{
 
 
 
-@media screen and (min-width: 376px) and (max-width: 414px){
+@media screen and (min-width: 400px) and (max-width: 450px){
 	/*最上方選單*/
 	.title{
 		position: relative;
@@ -673,7 +673,7 @@ i{
 
 
 
-@media screen and (min-width: 415px) and (max-width: 1350px){
+@media screen and (min-width: 450px) and (max-width: 1350px){
 	/*最上方選單*/
 	.title{
 		margin-top: -2%;
