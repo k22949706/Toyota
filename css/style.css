@@ -670,3 +670,39 @@ i{
 		margin-top: -2%;
 	}
 }
+
+
+
+@media screen and (min-width: 415px) and (max-width: 1350px){
+	/*最上方選單*/
+	.title{
+		margin-top: -2%;
+	}
+	#top-buttons-container{
+		margin-top: -2.95%;
+		margin-left: 13%;
+	}
+	/*車輛介紹*/
+	.type-text{
+		font-size: 8px;
+	}
+	/*會員註冊*/
+	.g-recaptcha {
+		position: relative;
+		left: 20%;
+    }
+	/*底部*/
+	.help-button{
+		margin-right: 0.0001%;
+	}
+	#copyright-img{
+		margin-top: 1.5%;
+	}
+	#reminder-text{
+		float: right;
+		margin-top: 3%;
+		margin-right: -33%;
+		color: #707070;
+		font-size: 8px;
+	}
+}
