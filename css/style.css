@@ -1,5 +1,6 @@
 body{
 	margin: 0;
+	font-family: sans-serif, Microsoft JhengHei;
 }
 /*最上方選單*/
 .top{
@@ -348,25 +349,25 @@ i{
 	margin: 0;
 }
 #copyright-container{
+	position: relative;
+	float: right;
+	right: 5%;
+	margin-top: 0.3%;
 	box-sizing: border-box;
 }
 #copyright-text{
-	float: right;
 	color: white;
-	font-family: sans-serif;
 	font-size: 14px;
-	margin-right: 3%;
-	margin-top: 0.35%;
 }
 #copyright-img{
-	float: right;
-	margin-right: 0.9%;
-	margin-top: 1.15%;
+	position: relative;
+	right: 36%;
+	margin-top: -10%;
 }
 #reminder-text{
-	float: right;
-	margin-top: 2.2%;
-	margin-right: -23%;
+	position: relative;
+	left: 10%;
+	margin-top: -2%;
 	color: #707070;
 	font-size: 8px;
 }
@@ -457,14 +458,14 @@ i{
 	/*最上方選單*/
 	.title{
 		position: relative;
-		left: 25%;
+		left: 27%;
 		margin-top: -18%;
 		color: white;
 		z-index: 2;
 		position: fixed;
 	}
 	#top-buttons-container{
-		margin-top: -13%;
+		margin-top: -12%;
 		margin-left: -1%;
 	}
 	.top-button{
@@ -479,24 +480,19 @@ i{
 	.main_title{
 		transform: scale(0.6);
 	}
-	.car-name{
-		transform: scale(0.55);
-	}
 	.car-price{
 		font-size: 12px;
 	}
-	.car-type-long{
-		width: 120%;
-		height: 20px;
-		transform: scale(0.6);
-	}
-	.car-type-short{
-		width: 50%;
-		height: 20px;
-		transform: scale(0.6);
-	}
 	.type-text{
 		font-size: 12px;
+	}
+	.second_1{
+		display: block;
+		margin-top: 5%;
+	}
+	.second_2{
+		display: block;
+		margin-top: 5%;
 	}
 
 	/*會員註冊*/
@@ -541,22 +537,21 @@ i{
 	#copyright-text{
 		position: relative;
 		left: -3%;
-		margin-top: 0.35%;
+		margin-top: 15%;
 	}
 	#copyright-img{
-		position: relative;
-		left: -37%;
-		margin-top: -1%;
+		float: right;
+		margin-top: -19%;
 	}
 	#reminder-text{
 		position: relative;
 		margin-top: 5%;
-		left: -6.5%;
+		left: 3%;
 	}
 	#help{
 		position: relative;
 		text-align: center;
-		margin-top: -2%;
+		margin-top: -4%;
 		left: -2%;
 	}
 	.help-button{
