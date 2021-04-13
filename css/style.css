@@ -38,9 +38,11 @@ body{
 	color: red;
 }
 nav{
-	padding-top: 3.75%;
+	padding-top: 80px;
 }
-
+#top-container-mobile{
+	display: none;
+}
 
 
 /*圖片輪播效果*/
@@ -170,7 +172,7 @@ div{
 	color: gray;
 }
 .car-type-long{
-	width: 35%;
+	width: 110px;
 	height: 20px;
 	margin-top: 2%;
 	background: gray;
@@ -181,7 +183,7 @@ div{
     border-style:none;
 }
 .car-type-short{
-	width: 18%;
+	width: 50px;
 	height: 20px;
 	margin-top: 2%;
 	background: gray;
@@ -208,9 +210,8 @@ div{
 	position: relative;
 	z-index: 0;
 	margin-top: 3%;
-	width: 40%;
-	height: 450px;
-	left: 30%;
+	width: 800px;
+	height: 500px;
 	margin-bottom: 5%;
 	background: #EEEEEE;
 	box-sizing: border-box;
@@ -223,7 +224,6 @@ div{
 #mail{
 	position:relative;
 	margin-top: 5%;
-	left: 9%;
 }
 ::-webkit-input-placeholder { /* Chrome, Safari */
     color: gray;
@@ -234,7 +234,7 @@ i{
     z-index: 2;
 	font-size: 24px;
 	top: 27%;
-    left: 2.5%;
+    left: 12%;
     color: gray;
 }
 .member-register-input{
@@ -268,7 +268,6 @@ i{
 }
 #submit-member-file{
 	position: relative;
-	left: 10%;
 	margin-top: 5%;
 }
 #submit-member-file-input{
@@ -337,34 +336,42 @@ i{
 #copyright-container{
 	position: relative;
 	float: right;
-	right: 5%;
+	right: 120px;
 	margin-top: 0.5%;
 	box-sizing: border-box;
 }
+#copyright-container-mobile{
+	display: none;
+}
 #copyright-text{
+	position: relative;
+	left: 30%;
 	color: white;
 	font-size: 14px;
 }
 #copyright-img{
 	position: relative;
-	right: 36%;
-	margin-top: -10%;
+	right: 30px;
+	margin-top: -9.5%;
 }
 #reminder-text{
 	position: relative;
-	left: 10%;
-	margin-top: -2%;
+	left: 35%;
+	margin-top: 0%;
 	color: #707070;
 	font-size: 8px;
 }
 #help{
 	float: left;
-	margin-top: 0.3%;
-	margin-left: 2%;
+	padding-top: 10px;
+	margin-left: 10px;
 	padding-right: 3%;
 }
+#help-mobile{
+	display: none;
+}
 #help-buttons-container{
-	margin-bottom: -3.7%;
+	margin-bottom: -4%;
 }
 .help-button{
 	display: inline;
@@ -392,30 +399,44 @@ i{
 
 /*RWD設定*/
 @media screen and (max-width: 400px){
-	/*最上方選單*/
-	#top{ 
-		position: absolute;
-		top: 50%;
-		left: 8px;
-		padding: 3%;
-		transform: translate(0, -65%);
-		display: block;
+	h1{
+		transform: scale(0.6);
 	}
-	#title{
+	nav{
+		padding-top: 107.5px;
+	}
+	/*最上方選單*/
+	#top-container{
+		display: none;
+	}
+	#top-container-mobile{
+		display: block;
+		width: 100%;
+		height: 100px;
+		margin: 0;
+		background: white;
+		z-index: 1;
+		position: fixed;
+		box-shadow: #666 0 0 5px;
+		box-sizing: border-box;
+	}
+	#top-mobile{ 
+		display: block;
+		text-align: center;
+		margin-top: -80px;
+	}
+	#title-mobile{
+		display: block;
 		position: relative;
-		margin-left: 93px;
+		right: 20px;
 		margin-bottom: 10px;
 	}
 	.top-button{
 		position: relative;
-		display: inline;
-		left: 3%;
-		margin-right: 15px;
-	}
-	nav{
-		padding-top: 25%;
-	}
+		right: 10px;
+		margin-right: 10px;
 
+	}
 	/*車款介紹*/
 	.main_title{
 		transform: scale(0.6);
@@ -434,96 +455,112 @@ i{
 		display: block;
 		margin-top: 5%;
 	}
-
 	/*會員註冊*/
 	.member-title{
-		transform: scale(0.6);
+		position: relative;
+		margin-top: 10%;
 	}
 	.member-register-space{
 		position: relative;
-		width: 80%;
-		height: 350px;
-		left: 10%;
-		margin-bottom: 10%;
-	}
-	#member-register-title{
-		transform: scale(0.6);
+		width: 100%;
+		height: 400px;
+		margin-bottom: 15%;
 	}
 	.member-register-input{
-		text-indent: 15%;
+		text-indent: 13%;
 	}
 	#member-register-text-space{
-		font-size: smaller;
-		transform: scale(0.8);
+		font-size: 8px;
 	}
-	.g-recaptcha {
-        transform: scale(0.7);
-    }
-
 	/*關於我們*/
 	.about-us-block{
 		display: none;
 	}
-
 	/*底部*/
+	#copyright-container{
+		display: none;
+	}
+	#help{
+		display: none;
+	}
 	#bottom{
 		height: 170px;
 	}
-	#copyright-text{
-		position: relative;
-		left: -3%;
-		margin-top: 15%;
-	}
-	#copyright-img{
-		float: right;
-		margin-top: -19%;
-	}
-	#reminder-text{
-		position: relative;
-		margin-top: 5%;
-		left: 3%;
-	}
-	#help{
-		position: relative;
+	#copyright-container-mobile{
+		display: block;
 		text-align: center;
-		margin-top: -4%;
-		left: -2%;
 	}
-	.help-button{
-		margin-right: 0.0001%;
+	#copyright-img-mobile{
+		position: relative;
+		padding-top: 20px;
+	}
+	#copyright-text-mobile{
+		margin-top: -12px;
+		color: white;
+		font-size: 14px;
+	}
+	#reminder-text-mobile{
+		margin-top: -10px;
+		color: #707070;
+		font-size: 8px;
+	}
+	#help-mobile{
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+	}
+	#help-buttons-container-mobile{
+		position: relative;
+		right: 20px;
+		margin-bottom: -10px;
+	}
+	#help-numbers-container-mobile{
+		position: relative;
+		right: 20px;
 	}
 }
 
 
 
 @media screen and (min-width: 400px) and (max-width: 450px){
-	/*最上方選單*/
-	#top{ 
-		position: absolute;
-		top: 50%;
-		left: 8px;
-		padding: 5%;
-		transform: translate(0, -65%);
-		display: block;
+	h1{
+		transform: scale(0.6);
 	}
-	#title{
+	nav{
+		padding-top: 107.5px;
+	}
+	/*最上方選單*/
+	#top-container{
+		display: none;
+	}
+	#top-container-mobile{
+		display: block;
+		width: 100%;
+		height: 100px;
+		margin: 0;
+		background: white;
+		z-index: 1;
+		position: fixed;
+		box-shadow: #666 0 0 5px;
+		box-sizing: border-box;
+	}
+	#top-mobile{ 
+		display: block;
+		text-align: center;
+		margin-top: -80px;
+	}
+	#title-mobile{
+		display: block;
 		position: relative;
-		margin-left: 95px;
-		margin-bottom: 5px;
+		right: 20px;
+		margin-bottom: 10px;
 	}
 	.top-button{
 		position: relative;
-		display: inline;
-		left: 3%;
-		margin-right: 20px;
-	}
-	nav{
-		padding-top: 21%;
+		right: 10px;
+		margin-right: 10px;
 	}
 	/*車款介紹*/
-	.main_title{
-		transform: scale(0.6);
-	}
 	.car-price{
 		font-size: 12px;
 	}
@@ -540,69 +577,216 @@ i{
 	}
 	/*會員註冊*/
 	.member-title{
-		transform: scale(0.6);
+		position: relative;
+		margin-top: 10%;
 	}
 	.member-register-space{
 		position: relative;
-		width: 80%;
-		height: 350px;
-		left: 10%;
-		margin-bottom: 10%;
-	}
-	#member-register-title{
-		transform: scale(0.6);
+		width: 100%;
+		height: 400px;
+		margin-bottom: 15%;
 	}
 	.member-register-input{
-		text-indent: 15%;
+		text-indent: 13%;
 	}
 	#member-register-text-space{
-		font-size: smaller;
-		transform: scale(0.8);
+		font-size: 8px;
 	}
-	.g-recaptcha {
-        transform: scale(0.8);
-    }
 	/*關於我們*/
 	.about-us-block{
 		display: none;
 	}
 	/*底部*/
+	#copyright-container{
+		display: none;
+	}
+	#help{
+		display: none;
+	}
 	#bottom{
 		height: 170px;
 	}
-	#copyright-text{
-		position: relative;
-		left: -7%;
-		margin-top: 15%;
-	}
-	#copyright-img{
-		float: right;
-		margin-top: -19%;
-		margin-right: 8%;
-	}
-	#reminder-text{
-		position: relative;
-		margin-top: 5%;
-		left: -1%;
-	}
-	#help{
-		position: relative;
+	#copyright-container-mobile{
+		display: block;
 		text-align: center;
-		margin-top: -4%;
-		left: 2%;
 	}
-	.help-button{
-		margin-right: 0.0001%;
+	#copyright-img-mobile{
+		position: relative;
+		padding-top: 20px;
+	}
+	#copyright-text-mobile{
+		margin-top: -12px;
+		color: white;
+		font-size: 14px;
+	}
+	#reminder-text-mobile{
+		margin-top: -10px;
+		color: #707070;
+		font-size: 8px;
+	}
+	#help-mobile{
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+	}
+	#help-buttons-container-mobile{
+		position: relative;
+		right: 20px;
+		margin-bottom: -10px;
+	}
+	#help-numbers-container-mobile{
+		position: relative;
+		right: 20px;
 	}
 }
 
 
 
-@media screen and (min-width: 450px) and (max-width: 1350px){
+
+@media screen and (min-width: 450px) and (max-width: 717px){
+	h1{
+		transform: scale(0.8);
+	}
+	nav{
+		padding-top: 107.5px;
+	}
+	/*最上方選單*/
+	#top-container{
+		display: none;
+	}
+	#top-container-mobile{
+		display: block;
+		width: 100%;
+		height: 100px;
+		margin: 0;
+		background: white;
+		z-index: 1;
+		position: fixed;
+		box-shadow: #666 0 0 5px;
+		box-sizing: border-box;
+	}
+	#top-mobile{ 
+		display: block;
+		text-align: center;
+		margin-top: -80px;
+	}
+	#title-mobile{
+		display: block;
+		position: relative;
+		right: 20px;
+		margin-bottom: 10px;
+	}
 	/*車輛介紹*/
-	.type-text{
+	.second_1{
+		display: block;
+		margin-top: 5%;
+	}
+	.second_2{
+		display: block;
+		margin-top: 5%;
+	}
+	/*會員註冊*/
+	.member-title{
+		position: relative;
+		margin-top: 10%;
+	}
+	.member-register-space{
+		position: relative;
+		width: 400px;
+		height: 400px;
+		margin-bottom: 15%;
+	}
+	.member-register-input{
+		text-indent: 13%;
+	}
+	/*關於我們*/
+	.about-us-block{
+		display: none;
+	}
+	/*底部*/
+	#copyright-container{
+		display: none;
+	}
+	#help{
+		display: none;
+	}
+	#bottom{
+		height: 170px;
+	}
+	#copyright-container-mobile{
+		display: block;
+		text-align: center;
+	}
+	#copyright-img-mobile{
+		position: relative;
+		padding-top: 20px;
+	}
+	#copyright-text-mobile{
+		margin-top: -12px;
+		color: white;
+		font-size: 14px;
+	}
+	#reminder-text-mobile{
+		margin-top: -10px;
+		color: #707070;
 		font-size: 8px;
 	}
+	#help-mobile{
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+	}
+	#help-buttons-container-mobile{
+		position: relative;
+		right: 20px;
+		margin-bottom: -10px;
+	}
+	#help-numbers-container-mobile{
+		position: relative;
+		right: 20px;
+	}
+}
+
+
+
+
+@media screen and (min-width: 718px) and (max-width: 860px){
+	h1{
+		transform: scale(0.8);
+	}
+	/*會員註冊*/
+	.member-register-space{
+		width: 400px;
+		height: 400px;
+	}
+	.member-register-input{
+		text-indent: 13%;
+	}
+	/*底部*/
+	#bottom{
+		height: 150px;
+	}
+	#copyright-container{
+		position: relative;
+		float: right;
+		margin-top: 0.5%;
+		box-sizing: border-box;
+	}
+	#help{
+		position: relative;
+		left: 24%;
+		margin-top: 65px;
+		text-align: center;
+	}
+	.help-button{
+		margin-right: 0;
+	}
+}
+
+
+
+
+@media screen and (min-width: 861px) and (max-width: 1350px){
 	/*底部*/
 	.help-button{
 		margin-right: 0;
