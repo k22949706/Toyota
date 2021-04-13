@@ -393,24 +393,27 @@ i{
 /*RWD設定*/
 @media screen and (max-width: 400px){
 	/*最上方選單*/
-	.title{
-		position: relative;
-		left: 27%;
-		margin-top: -18%;
-		color: white;
-		z-index: 2;
-		position: fixed;
+	#top{ 
+		position: absolute;
+		top: 50%;
+		left: 8px;
+		padding: 3%;
+		transform: translate(0, -65%);
+		display: block;
 	}
-	#top-buttons-container{
-		margin-top: -12%;
-		margin-left: -1%;
+	#title{
+		position: relative;
+		margin-left: 93px;
+		margin-bottom: 10px;
 	}
 	.top-button{
+		position: relative;
 		display: inline;
-		margin-right: 3%;
+		left: 3%;
+		margin-right: 15px;
 	}
 	nav{
-		padding-top: 21%;
+		padding-top: 25%;
 	}
 
 	/*車款介紹*/
@@ -495,26 +498,28 @@ i{
 
 @media screen and (min-width: 400px) and (max-width: 450px){
 	/*最上方選單*/
-	.title{
-		position: relative;
-		left: 28%;
-		margin-top: -18%;
-		color: white;
-		z-index: 2;
-		position: fixed;
+	#top{ 
+		position: absolute;
+		top: 50%;
+		left: 8px;
+		padding: 5%;
+		transform: translate(0, -65%);
+		display: block;
 	}
-	#top-buttons-container{
-		margin-top: -13%;
-		margin-left: 3%;
+	#title{
+		position: relative;
+		margin-left: 95px;
+		margin-bottom: 5px;
 	}
 	.top-button{
+		position: relative;
 		display: inline;
-		margin-right: 3%;
+		left: 3%;
+		margin-right: 20px;
 	}
 	nav{
 		padding-top: 21%;
 	}
-
 	/*車款介紹*/
 	.main_title{
 		transform: scale(0.6);
@@ -533,7 +538,6 @@ i{
 		display: block;
 		margin-top: 5%;
 	}
-
 	/*會員註冊*/
 	.member-title{
 		transform: scale(0.6);
@@ -558,12 +562,10 @@ i{
 	.g-recaptcha {
         transform: scale(0.8);
     }
-
 	/*關於我們*/
 	.about-us-block{
 		display: none;
 	}
-
 	/*底部*/
 	#bottom{
 		height: 170px;
@@ -597,10 +599,12 @@ i{
 
 
 @media screen and (min-width: 450px) and (max-width: 1350px){
-	/*最上方選單*/
-
 	/*車輛介紹*/
 	.type-text{
 		font-size: 8px;
+	}
+	/*底部*/
+	.help-button{
+		margin-right: 0;
 	}
 }
