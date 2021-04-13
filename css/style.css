@@ -643,7 +643,7 @@ i{
 
 
 
-@media screen and (min-width: 450px) and (max-width: 717px){
+@media screen and (min-width: 450px) and (max-width: 850px){
 	h1{
 		transform: scale(0.8);
 	}
@@ -749,44 +749,7 @@ i{
 
 
 
-
-@media screen and (min-width: 718px) and (max-width: 860px){
-	h1{
-		transform: scale(0.8);
-	}
-	/*會員註冊*/
-	.member-register-space{
-		width: 400px;
-		height: 400px;
-	}
-	.member-register-input{
-		text-indent: 13%;
-	}
-	/*底部*/
-	#bottom{
-		height: 150px;
-	}
-	#copyright-container{
-		position: relative;
-		float: right;
-		margin-top: 0.5%;
-		box-sizing: border-box;
-	}
-	#help{
-		position: relative;
-		left: 24%;
-		margin-top: 65px;
-		text-align: center;
-	}
-	.help-button{
-		margin-right: 0;
-	}
-}
-
-
-
-
-@media screen and (min-width: 861px) and (max-width: 1350px){
+@media screen and (min-width: 851px) and (max-width: 1350px){
 	/*底部*/
 	.help-button{
 		margin-right: 0;
