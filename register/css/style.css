@@ -267,23 +267,23 @@ i{
 	#copyright-text{
 		position: relative;
 		left: -7%;
-		margin-top: 0.35%;
+		margin-top: 15%;
 	}
 	#copyright-img{
-		position: relative;
-		left: -37%;
-		margin-top: 0%;
+		float: right;
+		margin-top: -19%;
+		margin-right: 8%;
 	}
 	#reminder-text{
 		position: relative;
 		margin-top: 5%;
-		left: -12.5%;
+		left: -1%;
 	}
 	#help{
 		position: relative;
-		left: 2.5%;
 		text-align: center;
-		margin-top: -2%;
+		margin-top: -4%;
+		left: 2%;
 	}
 	.help-button{
 		margin-right: 0.0001%;
@@ -298,19 +298,5 @@ i{
 	#top-buttons-container{
 		margin-top: -2.95%;
 		margin-left: 13%;
-	}
-	/*底部*/
-	.help-button{
-		margin-right: 0.0001%;
-	}
-	#copyright-img{
-		margin-top: 1.5%;
-	}
-	#reminder-text{
-		float: right;
-		margin-top: 3%;
-		margin-right: -33%;
-		color: #707070;
-		font-size: 8px;
 	}
 }
