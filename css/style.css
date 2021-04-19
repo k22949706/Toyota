@@ -229,13 +229,41 @@ div{
     color: gray;
 	font-weight: bolder;
 }
-i{
+#mail #icon-mail i{
     position: absolute;
     z-index: 2;
 	font-size: 24px;
 	top: 27%;
     left: 12%;
     color: gray;
+}
+#icon-valid{
+	display: none;
+}
+#mail #icon-valid i{
+	position: absolute;
+    z-index: 2;
+	font-size: 24px;
+	left: 91.5%;
+	bottom: 25%;
+	color: green;
+}
+input:focus:valid+#icon-valid{
+	display: inline;
+}
+#icon-invalid{
+	display: none;
+}
+#mail #icon-invalid i{
+	position: absolute;
+    z-index: 2;
+	font-size: 24px;
+	left: 91.5%;
+	bottom: 25%;
+	color: red;
+}
+input:focus:invalid+#icon-invalid{
+	display: inline;
 }
 .member-register-input{
 	position: relative;

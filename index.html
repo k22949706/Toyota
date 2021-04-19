@@ -203,9 +203,11 @@
 				</div>-->
 				<h1 id="member-register-title">快速註冊</h1>
 				<div id="mail">
-                    <i class="fas fa-envelope"></i>
+                    <div id="icon-mail"><i class="fas fa-envelope"></i></div>
                     <input class="member-register-input" type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
 					onchange="this.setCustomValidity(this.validity.patternMismatch ? '請輸入正確的信箱' : '');" required />
+					<div id="icon-valid"><i class="fas fa-check-circle"></i></div>
+					<div id="icon-invalid"><i class="fas fa-times-circle"></i></div>
                 </div>
 				<div id="member-register-text-space">
 					<p class="member-register-text">註冊表示您同意</p>
