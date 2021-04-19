@@ -79,13 +79,34 @@ nav{
     color: gray;
 	font-weight: bolder;
 }
-i{
+.register-account>i{
     position: absolute;
     z-index: 2;
 	font-size: 24px;
 	top: 27%;
     left: 2.5%;
     color: gray;
+}
+.icon-valid>i{
+	display: none;
+}
+.register-account>input:required:valid+.icon-valid>.fa-check-circle{
+	display: inline;
+	position: absolute;
+    z-index: 2;
+	font-size: 24px;
+	left: 76%;
+	bottom: 25%;
+	color: green;
+}
+.register-account>input:focus:required:invalid+.icon-valid>.fa-times-circle{
+	display: inline;
+	position: absolute;
+    z-index: 2;
+	font-size: 24px;
+	left: 76%;
+	bottom: 25%;
+	color: red;
 }
 .member-register-input{
 	position: relative;
@@ -238,6 +259,12 @@ i{
 		font-size: smaller;
 		transform: scale(0.8);
 	}
+	.register-account>input:required:valid+.icon-valid>.fa-check-circle{
+		left: 73%;
+	}
+	.register-account>input:focus:required:invalid+.icon-valid>.fa-times-circle{
+		left: 73%;
+	}
 	/*底部*/
 	#copyright-container{
 		display: none;
@@ -328,6 +355,12 @@ i{
 	#member-register-text-space{
 		font-size: smaller;
 		transform: scale(0.8);
+	}
+	.register-account>input:required:valid+.icon-valid>.fa-check-circle{
+		left: 73%;
+	}
+	.register-account>input:focus:required:invalid+.icon-valid>.fa-times-circle{
+		left: 73%;
 	}
 	/*底部*/
 	#copyright-container{
@@ -431,6 +464,12 @@ i{
 	}
 	.member-register-input{
 		text-indent: 13%;
+	}
+	.register-account>input:required:valid+.icon-valid>.fa-check-circle{
+		left: 73%;
+	}
+	.register-account>input:focus:required:invalid+.icon-valid>.fa-times-circle{
+		left: 73%;
 	}
 	/*關於我們*/
 	.about-us-block{

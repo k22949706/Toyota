@@ -189,25 +189,12 @@
 		<h1 class="member-title">會員註冊</h1>
 		<center><div class="member-register-space">
 			<form action="https://k22949706.github.io/Toyota/register/">
-				<!--<div id="account">
-					<b><p class="member_register_text">帳號 :</p></b>
-					<input class="member_register_input" type="email" name="account" placeholder="請輸入您的電子郵件" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-				</div>
-				<div id="password">
-					<b><p class="member_register_text">密碼 :</p></b>
-					<input class="member_register_input" type="password" name="password" placeholder="請輸入您的密碼" pattern="[a-zA-Z0-9]{8,}" required>
-				</div>
-				<div id="phone">
-					<b><p class="member_register_text">手機號碼 :</p></b>
-					<input class="member_register_input" type="phone" name="phone" placeholder="請輸入您的手機號碼" pattern="^09[0-9]{8}$" required>
-				</div>-->
 				<h1 id="member-register-title">快速註冊</h1>
 				<div id="mail">
                     <div id="icon-mail"><i class="fas fa-envelope"></i></div>
                     <input class="member-register-input" type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
 					onchange="this.setCustomValidity(this.validity.patternMismatch ? '請輸入正確的信箱' : '');" required />
-					<div id="icon-valid"><i class="fas fa-check-circle"></i></div>
-					<div id="icon-invalid"><i class="fas fa-times-circle"></i></div>
+					<div id="icon-valid"><i class="fas fa-check-circle"></i><i class="fas fa-times-circle"></i></div>
                 </div>
 				<div id="member-register-text-space">
 					<p class="member-register-text">註冊表示您同意</p>

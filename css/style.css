@@ -229,7 +229,7 @@ div{
     color: gray;
 	font-weight: bolder;
 }
-#mail #icon-mail i{
+#icon-mail i{
     position: absolute;
     z-index: 2;
 	font-size: 24px;
@@ -237,33 +237,26 @@ div{
     left: 12%;
     color: gray;
 }
-#icon-valid{
+#icon-valid>i{
 	display: none;
 }
-#mail #icon-valid i{
+#mail>input:required:valid+#icon-valid>.fa-check-circle{
+	display: inline;
 	position: absolute;
     z-index: 2;
 	font-size: 24px;
-	left: 91.5%;
+	left: 86%;
 	bottom: 25%;
 	color: green;
 }
-input:focus:valid+#icon-valid{
+#mail>input:focus:required:invalid+#icon-valid>.fa-times-circle{
 	display: inline;
-}
-#icon-invalid{
-	display: none;
-}
-#mail #icon-invalid i{
 	position: absolute;
     z-index: 2;
 	font-size: 24px;
-	left: 91.5%;
+	left: 86%;
 	bottom: 25%;
 	color: red;
-}
-input:focus:invalid+#icon-invalid{
-	display: inline;
 }
 .member-register-input{
 	position: relative;
@@ -500,6 +493,12 @@ input:focus:invalid+#icon-invalid{
 	#member-register-text-space{
 		font-size: 8px;
 	}
+	#mail>input:required:valid+#icon-valid>.fa-check-circle{
+		left: 81%;
+	}
+	#mail>input:focus:required:invalid+#icon-valid>.fa-times-circle{
+		left: 81%;
+	}
 	/*關於我們*/
 	.about-us-block{
 		display: none;
@@ -620,6 +619,12 @@ input:focus:invalid+#icon-invalid{
 	#member-register-text-space{
 		font-size: 8px;
 	}
+	#mail>input:required:valid+#icon-valid>.fa-check-circle{
+		left: 82%;
+	}
+	#mail>input:focus:required:invalid+#icon-valid>.fa-times-circle{
+		left: 82%;
+	}
 	/*關於我們*/
 	.about-us-block{
 		display: none;
@@ -726,6 +731,12 @@ input:focus:invalid+#icon-invalid{
 	}
 	.member-register-input{
 		text-indent: 13%;
+	}
+	#mail>input:required:valid+#icon-valid>.fa-check-circle{
+		left: 82%;
+	}
+	#mail>input:focus:required:invalid+#icon-valid>.fa-times-circle{
+		left: 82%;
 	}
 	/*關於我們*/
 	.about-us-block{
